@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sono:wght@200..800&display=swap');
+body{
+    font-family:  "Sono", serif;
+    background-color: hsl(0, 0%, 97%);
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 240px 250px 250px 220px;
+    grid-template-rows: 350px 230px 230px;
+    grid-auto-rows: 75px auto 75px;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.container>div{
+    border-radius: 15px;
+    padding:10px;
+}
+.illustration-1{
+    background-color: hsl(31, 66%, 93%);
+   grid-column: 1/2;
+    /* height: 400px; */
+    padding: 20px;
+}
+.Createpost{
+    width: 180px;
+}
+.illustration-2{
+    background-color:hsl(256, 67%, 59%) ;
+    display:flex ; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.fivestars{
+    width: 150px;
+    margin-top: -20px;
+}
+.illustration-3{
+    background-color: hsl(254, 88%, 90%) ;
+    
+   grid-column: 4/5;
+   grid-row: 1/3;
+   /* margin-left: 300px; */
+}
+.schedulepost{
+    width: 300px ;
+    height: 300px;
+    margin-left: 20px;
+}
+.illustration-4{
+    background-color: hsl(39, 100%, 71%) ;
+  /*   height: 400px */;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.aicontent{
+    width: 220px;
+    height: 220px;
+    margin-top: 10px;
+}
+.illustration-5,
+.illustration-6
+{
+    background-color: hsl(0, 0%, 100%);
+   /*  width: 180px;
+    height: 200px; */
+    
+}
+.multipleplatforms{
+    width: 320px;
+    height:70px ;
+    
+}
+.illustration-4{
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+}
+.illustration-6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.audiencegrowth{
+    width: 180px;
+}
+.illustration-5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.illustration-7{
+    background-color:hsl(39, 100%, 71%) ;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.consistentschedule{
+    width: 150px;
+}
+.illustration-8{
+    background-color:hsl(256, 67%, 59%) ;
+    grid-row: 3/4;
+    grid-column: 3/5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.growfollowers{
+    width: 150px;
+    height: 150px;
+}
+/* .illustration-5,.illustration-6{
+    grid-row: 2/3;
+} */
+ .gfp{
+    font-size: 30px;
+}
+.Consistent{
+    font-size: 28px;
+    margin-top: 2px;
+    margin-left: 40px;
+}
+.schedule{
+    font-size: 28px;
+}
+i{
+    color: hsl(256, 67%, 59%);
+}
+.illustration-2>h2{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+span{
+    color:hsl(39, 100%, 71%);
+}
+.illustration-2>p{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    word-spacing: 2px;
+}
+.illustration-3>h3{
+    margin-left: 20px;
+    font-size: 25px;
+}
+.illustration-3>p{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.illustration-4>h3{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.illustration-5>h3{
+    font-size: 23px;
+    margin-right: 60px;
+}
+.illustration-6>h2{
+    font-size: 48px;
+    margin-top: -1px;
+}
+
+@media (min-width:320px) and (max-width:374px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    }
+    .container>div{
+    width:320px;
+    }
+}
+@media (min-width:375px) and (max-width:424px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .illustration-2{order: -1;}
+    .illustration-4{order: 8;}
+    .illustration-1{order: 7;}
+    .illustration-3{order: 4;}
+    .illustration-7{order: -4;}
+    .illustration-8{order: 5;}
+    .illustration-6{order:6;}
+}/* 
+.illustration-3{
+      width: 220px;
+      height: 580px;
+      overflow: hidden;
+      position: relative;
+}
+.illustration-3>img{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 20px;
+}
+
+ */
